@@ -21,7 +21,7 @@ process.load('FWCore.MessageService.MessageLogger_cfi')
 process.MessageLogger.cerr.FwkReport.reportEvery = 1000
 
 process.TFileService=cms.Service("TFileService",
-                                 fileName=cms.string(THISROOTFILE),
+                                 fileName=cms.string("test_flat-data_cfg.root"),
                                  closeFileFast = cms.untracked.bool(True)
                                  )
 
@@ -54,10 +54,11 @@ process.source = cms.Source(
         #'file:/eos/uscms/store/user/dgsheffi/ScoutingPFHT/ScoutingPFHT_3CB17709-3868-E511-B794-02163E011A08.root'
         ## ScoutingPFHT
         #'root://xrootd.unl.edu//store/data/Run2015D/ScoutingPFHT/RAW/v1/000/258/742/00000/9EDBF901-6070-E511-B8BD-02163E01466B.root' #old config (257933<=run<259636)
-        'root://xrootd.unl.edu//store/data/Run2015D/ScoutingPFHT/RAW/v1/000/260/627/00000/70F86CB6-D881-E511-A4A0-02163E014303.root' #new config (run>=259636)
+        #'root://xrootd.unl.edu//store/data/Run2015D/ScoutingPFHT/RAW/v1/000/260/627/00000/70F86CB6-D881-E511-A4A0-02163E014303.root' #new config (run>=259636)
         ## ScoutingPFCommissioning
         #'root://xrootd.unl.edu//store/data/Run2015D/ScoutingPFCommissioning/RAW/v1/000/258/742/00000/46EA74B9-6270-E511-B9E2-02163E014534.root' #old config (257933<=run<259636)
         #'root://xrootd.unl.edu//store/data/Run2015D/ScoutingPFCommissioning/RAW/v1/000/260/627/00000/42D69A83-F181-E511-9C31-02163E014698.root' #new config (run>=259636)
+        '/store/data/Run2015D/ScoutingPFHT/RAW/v1/000/259/636/00000/E037F887-2678-E511-8C8F-02163E0136BE.root'
     )
 )
 
